@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pelos e Patas - Cadastro</title>
+</head>
+<body>
+    <header>
+        <a href="./index.html">Pelos e Patas</a>
+        <nav>
+            <ul>
+                <li><a href="./projetos.html">Projetos</a></li>
+                <li><a href="./cadastro.html">Cadastro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Cadastre-se</h1>
+            <form method="post">
+
+                <fieldset>
+                    <legend>Dados Pessoais:</legend>
+                    <label>
+                        Nome Completo*:
+                        <input type="text" name="nomeCompleto" required>
+                    </label> <br> <br>
+
+                    <label>
+                        E-mail*:
+                        <input type="email" name="email" required>
+                    </label> <br> <br>
+
+                    <label>
+                        CPF*:
+                        <input type="text" pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}" 
+                            placeholder="000.000.000-00" title="Formato: 000.000.000-00" required>
+                    </label> <br> <br>
+
+                    <label>
+                        Telefone:
+                        <input type="tel" pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}" 
+                            placeholder="(00) 00000-0000" title="Formato: (00) 00000-0000">
+                    </label> <br> <br>
+
+                    <label>
+                        Nascimento*:
+                        <input type="date" name="nascimento" required>
+                    </label> <br> <br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Endereço:</legend>
+                    <label>
+                        Endereço*:
+                        <input type="text" name="endereco" required>
+                    </label> <br> <br>
+
+                    <label>
+                        CEP*:
+                        <input type="text" pattern="[0-9]{5}-[0-9]{3}" 
+                            placeholder="00000-000" title="Formato: 00000-000">
+                    </label> <br> <br>
+
+                    <label>
+                        Cidade:
+                        <input type="text" name="cidade">
+                    </label>
+
+                    <label>
+                        Estado:
+                        <input type="text" name="estado">
+                    </label>  <br> <br>
+                </fieldset>
+
+                <input type="submit" value="Cadastrar">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <h2>Contatos</h2>
+            <p>📍 <strong>Endereço:</strong> Rua Exemplo, Bairro Central - Cidade / Estado</p>
+            <p>📱 <strong>Telefone / WhatsApp:</strong> (00) 00000-0000</p>
+            <p>✉️ <strong>E-mail:</strong> contato@pelosepatas.org</p>
+        </div>
+        <div>
+            <h2>Redes Sociais</h2>
+            <p>Instagram: <a href="#">@pelosepatas</a></p>
+            <p>Facebook: <a href="#">/pelosepatas</a></p>
+            <p>TikTok: <a href="#">@pelosepatas</a></p>
+        </div>
+    </footer>
+</body>
+</html>
