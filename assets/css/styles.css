@@ -1,0 +1,270 @@
+:root {
+
+  --azul-calmo: #4569d7;
+  --cinza-claro: #F3F4F6;
+}
+
+* {
+    box-sizing: border-box;
+    padding:0;
+    margin:0px;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    transition: all 0.2s ease;
+}
+
+/* ESTILIZAÇÃO DO HEADER */
+
+.header {
+    width:100%;
+    max-width:1100px;
+    margin:auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: white;
+    padding: 0 20px;
+}
+
+.header ul {
+    list-style: none;
+    display:flex;
+    gap: 20px;   
+}
+
+.header li a{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.header a {
+    text-decoration: none;
+    color: black;
+}
+
+.header li a:hover {
+    opacity: 0.5;
+}
+
+.header .logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--azul-calmo)
+}
+
+/* ESTILIZAÇÃO DA MAIN - INDEX */
+
+main {
+    width:100%;
+    background-color: var(--cinza-claro);
+}
+
+.index-about {
+    max-width: 1100px;
+    margin:auto;
+    padding: 20px 20px 0 20px;
+    height:calc(80vh - 80px);
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.index-about h1 {
+    font-size:40px;
+    margin-bottom: 50px;
+    line-height: 44px;
+}
+
+.index-about p {
+    max-width: 350px;
+}
+
+.index-about img {
+    max-width: 600px;
+    height: auto;
+    border-radius: 20px;
+    margin-left:20px;
+}
+
+/* ESTILIZAÇÃO DE PROJETOS */
+
+.voluntario {
+    max-width:1100px;
+    margin:auto;
+    display:flex;
+    gap:20px;
+    padding: 50px 20px 0px 20px;
+    justify-content: space-between;
+}
+
+.projeto_leftside {
+    display:flex;
+    flex-direction: column;
+}
+
+.projeto_leftside h1 {
+    font-size:32px;
+    margin-bottom: 50px;
+    line-height: 44px;
+}
+
+.projeto_leftside p {
+    margin-bottom:20px;
+}
+
+.projeto_rightside {
+    display:flex;
+    align-items: center;
+}
+
+.projeto_rightside img {
+    max-width: 500px;
+    border-radius: 20px;
+    margin-left:70px;
+}
+
+.doacao {
+    max-width:1100px;
+    margin:auto;
+    display:flex;
+    gap:20px;
+    padding: 50px 20px 50px 20px;
+}
+
+.doacao_leftside {
+    display:flex;
+    align-items: center;
+}
+
+.doacao_leftside img {
+    max-width: 500px;
+    border-radius: 20px;
+    margin-right:70px;
+}
+
+.doacao_rightside h2 {
+    font-size:32px;
+    margin-bottom: 50px;
+    line-height: 44px;
+}
+
+.doacao_rightside p {
+    margin-bottom:20px;
+}
+
+/* ESTILIZAÇÃO CADASTRO */
+
+.cadastro {
+    max-width:1100px;
+    margin:auto;
+    padding: 50px 20px;
+}
+
+.cadastro fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+    background: transparent
+}
+
+.cadastro h1 {
+    font-size:32px;
+    margin-bottom: 10px;
+}
+
+.cadastro_form {
+    display:flex;
+    justify-content: space-between;
+}
+
+.cadastro_form label {
+    display:flex;
+    flex-direction: column;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.cadastro_form input {
+    padding: 10px 20px;
+    width: 400px;
+    border-radius: 5px;
+    border: 1px solid #C4C4C4;
+    margin-top:10px;
+    outline:none;
+}
+
+.cadastro_form legend {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--azul-calmo);
+    margin-bottom: 40px;
+}
+
+.form_nascimento {
+    max-width:190px;
+}
+
+.form_button {
+    display:inline;
+    background-color: var(--azul-calmo);
+    color:white;
+    cursor: pointer;
+}
+
+.form_estado {
+    margin-bottom: 20px;
+}
+
+.form_button:hover {
+    opacity: 0.5;
+}
+
+/* ESTILIZAÇÃO DO FOOTER */
+
+footer {
+    width:100%;
+    background-color: var(--azul-calmo);
+    color:white;
+    margin:auto;
+    padding: 0 20px;
+}
+
+footer section {
+    display:flex;
+    max-width:1100px;
+    margin:auto;
+    justify-content: space-between;
+    height:184px;
+    align-items: center;
+}
+
+.footer_leftside {
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.footer_leftside h2 {
+    margin-bottom:10px;
+}
+
+.footer_rightside {
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.footer_rightside h2 {
+    margin-bottom:10px;
+}
+
+.footer_rightside a {
+    text-decoration: none;
+    color:white;
+}
+
+.footer_rightside a:hover {
+    opacity: 0.5;
+}
