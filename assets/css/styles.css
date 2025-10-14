@@ -63,7 +63,7 @@ main {
 .index-about {
     max-width: 1100px;
     margin:auto;
-    padding: 20px 20px 0 20px;
+    padding: 50px 20px 50px 20px;
     height:calc(80vh - 80px);
     display:flex;
     align-items: center;
@@ -267,4 +267,193 @@ footer section {
 
 .footer_rightside a:hover {
     opacity: 0.5;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width:950px) {
+    .index-about img {
+        max-width: 400px;
+        height: auto;
+        border-radius: 20px;
+        margin-left:20px;
+    }
+
+    .projeto_rightside img {
+        max-width: 400px;
+        margin-left:20px;
+    }
+
+    .doacao_leftside img {
+        max-width: 400px;
+        margin-right:20px;
+    }
+
+    .cadastro h1 {
+        text-align: center;
+        margin-bottom:30px;
+    }
+
+    .cadastro_form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cadastro_form legend {
+        text-align: center;
+        margin-bottom:20px;
+    }
+
+    .cadastro_form label {
+        align-items: center;
+    }
+
+    .cadastro_form {
+        gap: 40px;
+    }
+}
+
+@media (max-width:750px) {
+
+    .index-about {
+        height:auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .index-about p {
+        margin-bottom: 50px;
+    }
+
+    .index-about img {
+        max-width: 400px;
+        margin-left:0;
+    }
+
+    .voluntario {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projeto_leftside h1 {
+        text-align: center;
+    }
+
+    .projeto_rightside img {
+        margin:0;
+    }
+
+    .doacao {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .doacao_leftside img {
+        margin:0;
+    }
+
+    .doacao_rightside h2 {
+        text-align: center;
+    }
+
+    
+
+    footer section {
+        height:250px;
+    }
+
+    footer section p,
+    footer section strong,
+    footer section a {
+        font-size:14px;
+    }
+
+    footer section h2 {
+        text-align: center;
+    }
+
+    .footer_rightside {
+        margin-left:20px;
+    }
+
+
+}
+
+@media (max-width:410px) {
+
+    .header .logo {
+        font-size:20px;
+    }
+
+    .header li a {
+        font-size:16px;
+    }
+
+    .index-about h1 {
+        text-align: center;
+        font-size:32px;
+        margin-bottom: 30px;
+        line-height: 46px;
+    }
+
+    .index-about p {
+        font-size:14px;
+    }
+
+    .index-about img {
+        max-width: 300px;
+        height: auto;
+        border-radius: 20px;
+        margin-left:0;
+    }
+
+    .projeto_leftside h1 {
+        font-size:28px;
+        margin-bottom: 30px;
+        line-height: 32px;
+    }
+
+    .projeto_leftside p {
+        font-size: 14px;
+    }
+
+    .projeto_rightside img {
+        max-width: 300px;
+    }
+
+    .doacao_leftside img {
+        max-width: 300px;;
+    }
+
+    .doacao_rightside h1 {
+        font-size:28px;
+        margin-bottom: 30px;
+        line-height: 32px;
+    }
+
+    .doacao_rightside p {
+        font-size: 14px;
+    }
+
+    .cadastro h1 {
+        font-size:28px;
+    }
+
+    .cadastro_form input {
+        width: 300px;
+        font-size:14px;
+    }
+
+    
+    footer section {
+        flex-direction: column;
+        height:auto;
+        padding: 20px 20px;
+    }
+
+    .footer_leftside {
+        margin:0;
+        margin-bottom:30px;
+    }
 }
