@@ -13,6 +13,10 @@
     transition: all 0.2s ease;
 }
 
+nav ul .active {
+    color: #4569d7a9;
+}
+
 /* ESTILIZAÇÃO DO HEADER */
 
 .header {
