@@ -31,7 +31,8 @@
                     <legend>Dados Pessoais</legend>
                     <label>
                         Nome Completo*:
-                        <input type="text" name="nomeCompleto" placeholder="Nome completo" required>
+                        <input type="text" name="nomeCompleto" placeholder="Nome completo" required
+                        data-rules="min=2">
                     </label>
 
                     <label>
@@ -53,7 +54,8 @@
 
                     <label>
                         Nascimento*:
-                        <input type="date" name="nascimento" class="form_nascimento" required>
+                        <input type="date" name="nascimento" class="form_nascimento" required
+                        data-rules="age">
                     </label>
                 </fieldset>
 
@@ -61,13 +63,14 @@
                     <legend>Endereço</legend>
                     <label>
                         Endereço*:
-                        <input type="text" name="endereco" placeholder="Insira sua rua e bairro aqui" required>
+                        <input type="text" name="endereco" placeholder="Insira sua rua e bairro aqui" required
+                        data-rules="min=2">
                     </label>
 
                     <label>
                         CEP*:
                         <input type="text" pattern="[0-9]{5}-[0-9]{3}" 
-                            placeholder="00000-000" title="Formato: 00000-000">
+                            placeholder="00000-000" title="Formato: 00000-000" required>
                     </label>
 
                     <label>
@@ -103,5 +106,7 @@
             </div>
         </section>
     </footer>
+
+    <script src="../assets/js/script.js"></script>
 </body>
 </html>
